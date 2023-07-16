@@ -1,6 +1,8 @@
-import Navbar from "@/components/navbar"
 import { useEffect, useState } from "react"
 import { SelectedPageOptions } from "@/components/navbar/type";
+import Navbar from "@/components/navbar"
+import Home from "@/components/home"
+import Benefits from "@/components/benefits";
 
 
 
@@ -31,6 +33,8 @@ const App = (props: Props) => {
   return (
     <div className="app bg-gray-20">
       <Navbar selectedPage={selectedPage} isTopOfPage={isTopOfPage} setSelectedPage={setSelectedPage} />
+      <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
       <br />
       <br />
       <br />
