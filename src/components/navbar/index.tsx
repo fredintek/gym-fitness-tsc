@@ -16,7 +16,6 @@ type Props = {
 const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
     const [ isMenuToggled, setIsMenuToggled ] = useState<boolean>(false)
     const flexBetween = "flex items-center justify-between"
-    const showBorder = "border border-red-500"
     const isAboveMediumScreens: boolean = useMediaQuery("(min-width: 1060px)") 
     const navBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow"
 
@@ -48,7 +47,6 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
                         <Bars3Icon className="h-4 w-4 text-white"/>
                     </button>)
                     }
-                    
                 </div>
               </div>
 
@@ -63,13 +61,12 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 
 
                   {/* MENU ITEMS */}
-                  <div className={`flex flex-col ml-[33%] gap-10 text-xl`}>
+                  <div className={`flex flex-col gap-14 text-xl h-full items-center`}>
                       <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                       <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                       <Link page="Our Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                       <Link page="Contact Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                   </div>
-
               </div>
         </nav>
 
