@@ -1,9 +1,7 @@
 import Logo from "@/assets/Logo.png"
-import { motion } from "framer-motion"
 
-type Props = {}
 
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className="bg-primary-100 py-16">
         <div className="mx-auto w-11/12 gap-16 md:flex">

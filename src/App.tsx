@@ -8,18 +8,8 @@ import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer"
 
 
-
-type Props = {}
-
-const App = (props: Props) => {
+const App = () => {
   const [ isTopOfPage, setIsTopOfPage ] = useState<boolean>(true)
-
-  const tabs = [
-    { id: 0, title: 'Tab 1', content: 'Content for Tab 1' },
-    { id: 1, title: 'Tab 2', content: 'Content for Tab 2' },
-    { id: 2, title: 'Tab 3', content: 'Content for Tab 3' },
-  ];
-
 
   useEffect(() => {
 

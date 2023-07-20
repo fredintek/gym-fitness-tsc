@@ -11,7 +11,7 @@ const useMediaQuery = (query: string): boolean => {
         if (media.matches !== matches) {
             setMatches(media.matches)
         }
-        const listenToResize = (e: any) => setMatches(media.matches)
+        const listenToResize = () => setMatches(media.matches)
 
         window.addEventListener("resize", listenToResize)
         return () => window.removeEventListener("resize", listenToResize)
